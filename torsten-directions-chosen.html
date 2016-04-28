@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta charset="UTF-8">
+<title>Transit app>directions-chosen</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+<!-- Bootstrap Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Bootstrap Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="bootstrap-js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="css/torsten-style.css">
+
+</head>
+  <body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-default">
+			  <!--<div class="container-fluid"> -->
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">Transit</a>
+			    </div>
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Directions</a></li>
+							<li><a href="#">Nearby</a></li>
+							<li><a href="#">Schedule</a></li>
+							<li><a href="#">Settings</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  <!--</div>--><!-- /.container-fluid -->
+			</nav>
+
+			<div class="custom-container">
+
+				<div class="trip-overview row">
+					<div class="col-xs-6">
+						<div class="ETA">
+							<p>Time to destination: 42min</p>
+						</div><!-- /ETA -->
+					</div>
+					<div class="col-xs-6">
+						<button type="button" class="alert"><a href="#">alert</a></button>
+					</div>
+				</div><!-- /trip-overview row -->
+
+				<section id="trip-breakdown">
+					<div class="row trip-individual-stop">
+						<div class="col-xs-1 trip-time">
+							<p class="trip-time-large">4</p>
+							<p>min</p>
+						</div>
+						<div class="col-xs-1 trip-type">
+							<img class="transit-icons" src="images/man-icon.png">
+						</div>
+						<div class="col-xs-1 trip-stop current">
+							<span></span>
+						</div>
+						<div class="col-xs-9 trip-location">
+							<div class="row trip-location-top" style="background:red;">
+								<div class="col-xs-12">
+									<p>Walk to Kaimuki Mall, hnl, hi, 96815</p>
+								</div>
+							</div>
+							<div class="row trip-location-bottom" style="background:blue;">
+								<div class="col-xs-3">
+									<p>1:45pm</p>
+								</div>
+								<div class="col-xs-3">
+									<p>24</p>
+								</div>
+								<div class="col-xs-6">
+									<p>Northeast</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row trip-dashed-line">
+						<div class="col-xs-1 col-xs-offset-2">
+							<div class="dashed"></div>
+						</div>
+					</div>
+					<div class="row trip-individual-stop">
+						<div class="col-xs-1 trip-time">
+							<p class="trip-time-large">4</p>
+							<p>min</p>
+						</div>
+						<div class="col-xs-1 trip-type">
+							<img class="transit-icons" src="images/man-icon.png">
+						</div>
+						<div class="col-xs-1 trip-stop">
+							<span></span>
+						</div>
+						<div class="col-xs-9 trip-location">
+							<div class="row trip-location-top" style="background:red;">
+								<div class="col-xs-12">
+									<p>Walk to Kaimuki Mall, hnl, hi, 96815</p>
+								</div>
+							</div>
+							<div class="row trip-location-bottom" style="background:blue;">
+								<div class="col-xs-3">
+									<p>1:45pm</p>
+								</div>
+								<div class="col-xs-3">
+									<p>24</p>
+								</div>
+								<div class="col-xs-6">
+									<p>Northeast</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row trip-individual-stop">
+						<div class="col-xs-1 trip-time">
+							<p class="trip-time-large">4</p>
+							<p>min</p>
+						</div>
+						<div class="col-xs-1 trip-type">
+							<img class="transit-icons" src="images/man-icon.png">
+						</div>
+						<div class="col-xs-1 trip-stop">
+							<span></span>
+						</div>
+						<div class="col-xs-9 trip-location">
+							<div class="row trip-location-top" style="background:red;">
+								<div class="col-xs-12">
+									<p>Walk to Kaimuki Mall, hnl, hi, 96815</p>
+								</div>
+							</div>
+							<div class="row trip-location-bottom" style="background:blue;">
+								<div class="col-xs-3">
+									<p>1:45pm</p>
+								</div>
+								<div class="col-xs-3">
+									<p>24</p>
+								</div>
+								<div class="col-xs-6">
+									<p>Northeast</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row trip-individual-stop">
+						<div class="col-xs-1 trip-time">
+							<p class="trip-time-large">4</p>
+							<p>min</p>
+						</div>
+						<div class="col-xs-1 trip-type">
+							<img class="transit-icons" src="images/man-icon.png">
+						</div>
+						<div class="col-xs-1 trip-stop">
+							<span></span>
+						</div>
+						<div class="col-xs-9 trip-location">
+							<div class="row trip-location-top" style="background:red;">
+								<div class="col-xs-12">
+									<p>Walk to Kaimuki Mall, hnl, hi, 96815</p>
+								</div>
+							</div>
+							<div class="row trip-location-bottom" style="background:blue;">
+								<div class="col-xs-3">
+									<p>1:45pm</p>
+								</div>
+								<div class="col-xs-3">
+									<p>24</p>
+								</div>
+								<div class="col-xs-6">
+									<p>Northeast</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row trip-individual-stop">
+						<div class="col-xs-1 trip-time">
+							<p class="trip-time-large">4</p>
+							<p>min</p>
+						</div>
+						<div class="col-xs-1 trip-type">
+							<img class="transit-icons" src="images/man-icon.png">
+						</div>
+						<div class="col-xs-1 trip-stop">
+							<span></span>
+						</div>
+						<div class="col-xs-9 trip-location">
+							<div class="row trip-location-top" style="background:red;">
+								<div class="col-xs-12">
+									<p>Walk to Kaimuki Mall, hnl, hi, 96815</p>
+								</div>
+							</div>
+							<div class="row trip-location-bottom" style="background:blue;">
+								<div class="col-xs-3">
+									<p>1:45pm</p>
+								</div>
+								<div class="col-xs-3">
+									<p>24</p>
+								</div>
+								<div class="col-xs-6">
+									<p>Northeast</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row trip-individual-stop">
+						<div class="col-xs-1 trip-time">
+							<p class="trip-time-large">4</p>
+							<p>min</p>
+						</div>
+						<div class="col-xs-1 trip-type">
+							<img class="transit-icons" src="images/man-icon.png">
+						</div>
+						<div class="col-xs-1 trip-stop">
+							<span></span>
+						</div>
+						<div class="col-xs-9 trip-location">
+							<div class="row trip-location-top" style="background:red;">
+								<div class="col-xs-12">
+									<p>Walk to Kaimuki Mall, hnl, hi, 96815</p>
+								</div>
+							</div>
+							<div class="row trip-location-bottom" style="background:blue;">
+								<div class="col-xs-3">
+									<p>1:45pm</p>
+								</div>
+								<div class="col-xs-3">
+									<p>24</p>
+								</div>
+								<div class="col-xs-6">
+									<p>Northeast</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</section>
+
+			</div><!-- /custom-container -->
+
+			<footer>
+				<button type="button" class="cta"><a href="#">?</a></button>
+			</footer>
+		</div><!-- /container-fluid -->
+	</body>
+</html>
