@@ -268,3 +268,43 @@ p.home-main-button-text {
   max-width: 500px;
 }
 /* /NEARBY  */
+
+/* Directions  */
+
+.custom-container-directions {
+    margin: 0 auto;
+    height: 650px;
+    max-width: 500px;
+  }
+
+.input-group-addon {
+  background: none;
+}
+.glyphicon-map-marker,
+.glyphicon-sort {
+  color: white;
+}
+.tabs {
+  padding-top: 150px;
+}
+.nav-tabs {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.3em;
+}
+
+.nav-tabs>li>a {
+  color: white;
+}
+.tab-active {
+  background-color: rgba(250,250,250,0.3);
+}
+.tab-active:hover {
+  background-color: rgba(250,250,250,0.7);
+  border-radius: 0;
+}
+.nav-tabs>li>a:hover {
+  color: black;
+}
+
+/* /Directions  */
