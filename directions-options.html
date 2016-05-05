@@ -5,18 +5,12 @@
 <meta charset="UTF-8">
 <title>Transit app | Directions | Options </title>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
-<!-- Bootstrap Latest compiled and minified CSS -->
+<!-- Bootstrap Latest compiled and minified Jquery -->
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<!-- Bootstrap Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript" src="bootstrap-js/bootstrap.min.js"></script>
-
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript"></script>
 <link href="css/style.css" rel="stylesheet" type="text/css">
-
-<link rel="stylesheet" href="css/style.css">
-<style type="text/css">a {text-decoration:none;}</style>
 </head>
   <body>
 		<div class="container-fluid">
@@ -39,95 +33,113 @@
 							<li><a href="directions.html">Directions</a></li>
 							<li><a href="nearby.html">Nearby</a></li>
 							<li><a href="schedule.html">Schedule</a></li>
-							<li><a href="#">Settings</a></li>
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
+			</nav>
 			  <!--</div>--><!-- /.container-fluid -->
 					<div class="custom-container-directions-options">
-						<div class="input-group">
-						  <span class="input-group-addon glyphicon glyphicon-map-marker"></span>
-						  <input type="text" class="form-control" placeholder="KCC (already chosen)" aria-label="current location">
-						  <span class="input-group-addon"></span>
+						<div class="container directions-input">
+							<div class="row">
+									<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="padding:0px">
+											<div class="short-div">
+												<span class="glyphicon glyphicon-map-marker"></span>
+											</div>
+											<div class="short-div">
+												<span class="glyphicon glyphicon-map-marker"></span>
+											</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-5 col-xs-7" style="padding:0px">
+											<div class="short-div">
+												<input type="text" class="my-style-form" placeholder="Choose current location..." aria-label="current location">
+											</div>
+											<div class="short-div">
+												<input type="text" class="my-style-form" placeholder="Enter the destination point..." aria-label="current location">
+											</div>
+									</div>
+									<div class="col-xs-1 tall-div">
+										<span class="input-group-addon glyphicon glyphicon-sort"></span>
+									</div>
+							</div>
 						</div>
-						<div class="input-group">
-							<span class="input-group-addon glyphicon glyphicon-map-marker"></span>
-							<input type="text" class="form-control" placeholder="Waikiki (already chosen)" aria-label="current location">
-							<span class="input-group-addon glyphicon glyphicon-sort"></span>
-						</div>
-						<h4> Suggested </h4>
-						<div class="row row-options">
-								<div class="col-xs-2">
-									<img class="option-icons" src="images/bus-transparent.png" width="50%"; height="auto">
-									<p class="transportation-number">24</p>
-									<div class="arrow-right"></div>
+						<h4>Suggested</h4>
+						<ul class="list-routes no-bullet">
+							<li>
+								<a href="directions-chosen-v.2.html"><div class="row row-options">
+										<div class="col-xs-2">
+											<img class="option-icons after" src="images/bus-transparent.png" width="50%"; height="auto">
+											<p class="transportation-number">24</p>
+										</div>
+										<div class="arrow-right"></div>
+										<div class="col-xs-2">
+											<img class="option-icons after" src="images/bus-transparent.png" width="50%"; height="auto">
+											<p class="transportation-number">9</p>
+										</div>
+										<div class="arrow-right"></div>
+										<div class="col-xs-2">
+											<img class="option-icons" src="images/trolley-bus-transparent.png" width="50%"; height="auto">
+											<p class="transportation-number">12</p>
+										</div>
+										<div class="col-xs-5">
+											<p class="trip-time">42 min</p>
+										</div>
 								</div>
+							</a>
+							</li>
+							<li>
+								<a href="directions-chosen-v.2.html"><div class="row row-options">
+										<div class="col-xs-2">
+											<img class="option-icons after" src="images/bus-transparent.png" width="50%"; height="auto">
+											<p class="transportation-number">24</p>
+										</div>
+										<div class="arrow-right"></div>
+										<div class="col-xs-2">
+											<img class="option-icons after" src="images/bus-transparent.png" width="50%"; height="auto">
+											<p class="transportation-number">9</p>
+										</div>
+										<div class="arrow-right"></div>
+										<div class="col-xs-2">
+											<img class="option-icons after" src="images/bus-transparent.png" width="50%"; height="auto">
+											<p class="transportation-number">2</p>
+										</div>
+										<div class="arrow-right"></div>
+										<div class="col-xs-2">
+											<img class="option-icons" src="images/bus-transparent.png" width="50%"; height="auto">
+											<p class="transportation-number">1a</p>
+										</div>
+										<div class="col-xs-3">
+											<p class="trip-time">56 min</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="directions-chosen-v.2.html"><div class="row row-options">
+										<div class="col-xs-2">
+											<img class="option-icons after" src="images/trolley-bus-transparent.png" width="50%"; height="auto">
+											<p class="transportation-number">12</p>
+										</div>
+										<div class="arrow-right"></div>
+										<div class="col-xs-2">
+											<img class="option-icons" src="images/bus-transparent.png" width="50%"; height="auto">
+											<p class="transportation-number">2</p>
+										</div>
+										<div class="arrow-right"></div>
+										<div class="col-xs-2">
+											<img class="option-icons" src="images/bus-transparent.png" width="50%"; height="auto">
+											<p class="transportation-number">17</p>
 
-								<div class="col-xs-2">
-									<img class="option-icons" src="images/bus-transparent.png" width="50%"; height="auto">
-									<p class="transportation-number">9</p>
-									<div class="arrow-right"></div>
-
-								</div>
-								<div class="col-xs-2">
-									<img class="option-icons" src="images/trolley-bus-transparent.png" width="50%"; height="auto">
-									<p class="transportation-number">12</p>
-
-								</div>
-								<div class="col-xs-6">
-									<p class="trip-time">42 min</p>
-								</div>
-						</div>
-						<div class="row row-options">
-								<div class="col-xs-2">
-									<img class="option-icons" src="images/bus-transparent.png" width="50%"; height="auto">
-									<p class="transportation-number">24</p>
-									<div class="arrow-right"></div>
-
-								</div>
-								<div class="col-xs-2">
-									<img class="option-icons" src="images/bus-transparent.png" width="50%"; height="auto">
-									<p class="transportation-number">9</p>
-									<div class="arrow-right"></div>
-
-								</div>
-								<div class="col-xs-2">
-									<img class="option-icons" src="images/bus-transparent.png" width="50%"; height="auto">
-									<p class="transportation-number">2</p>
-									<div class="arrow-right"></div>
-
-								</div>
-								<div class="col-xs-2">
-									<img class="option-icons" src="images/bus-transparent.png" width="50%"; height="auto">
-									<p class="transportation-number">1a</p>
-
-								</div>
-								<div class="col-xs-4">
-									<p class="trip-time">56 min</p>
-								</div>
-						</div>
-						<div class="row row-options">
-								<div class="col-xs-2">
-									<img class="option-icons" src="images/trolley-bus-transparent.png" width="50%"; height="auto">
-									<p class="transportation-number">12</p>
-									<div class="arrow-right"></div>
-
-								</div>
-								<div class="col-xs-2">
-									<img class="option-icons" src="images/bus-transparent.png" width="50%"; height="auto">
-									<p class="transportation-number">2</p>
-									<div class="arrow-right"></div>
-
-								</div>
-								<div class="col-xs-2">
-									<img class="option-icons" src="images/bus-transparent.png" width="50%"; height="auto">
-									<p class="transportation-number">17</p>
-
-								</div>
-								<div class="col-xs-6">
-									<p class="trip-time">58 min</p>
-								</div>
-						</div>
+										</div>
+										<div class="col-xs-5">
+											<p class="trip-time">58 min</p>
+										</div>
+									</div>
+								</a>
+							</li>
+						 </ul>
 					</div><!-- /custom-container-fluid -->
-			</nav>
+			<footer>
+				<button type="button" class="cta"><a href="directions-chosen-v.2.html"><p class="question-mark">?</p></a></button>
+			</footer>
+
 	</body>
 </html>

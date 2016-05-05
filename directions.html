@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta charset="UTF-8">
 <title>Transit app | Directions </title>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
-<!-- Bootstrap Latest compiled and minified CSS -->
+<!-- Bootstrap Latest compiled and minified Jquery -->
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<!-- Bootstrap Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript" src="bootstrap-js/bootstrap.min.js"></script>
-
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript"></script>
 <link href="css/style.css" rel="stylesheet" type="text/css">
-
-<link rel="stylesheet" href="css/style.css">
-<style type="text/css">a {text-decoration:none;}</style>
 </head>
   <body>
 		<div class="container-fluid">
@@ -39,22 +33,32 @@
 							<li><a href="directions.html"class="current-page">Directions</a></li>
 							<li><a href="nearby.html">Nearby</a></li>
 							<li><a href="schedule.html">Schedule</a></li>
-							<li><a href="#">Settings</a></li>
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
-			  <!--</div>--><!-- /.container-fluid -->
 			</nav>
-
 			<div class="custom-container-directions">
-				<div class="input-group">
-				  <span class="input-group-addon glyphicon glyphicon-map-marker"></span>
-				  <input type="text" class="form-control" placeholder="Choose current location..." aria-label="current location">
-				  <span class="input-group-addon"></span>
-				</div>
-				<div class="input-group">
-					<span class="input-group-addon glyphicon glyphicon-map-marker"></span>
-					<input type="text" class="form-control" placeholder="Enter the destination point..." aria-label="current location">
-					<span class="input-group-addon glyphicon glyphicon-sort"></span>
+				<div class="container directions-input">
+			    <div class="row">
+							<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="padding:0px">
+									<div class="short-div">
+										<span class="glyphicon glyphicon-map-marker"></span>
+									</div>
+									<div class="short-div">
+										<span class="glyphicon glyphicon-map-marker"></span>
+									</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-5 col-xs-7" style="padding:0px">
+									<div class="short-div">
+										<input type="text" class="my-style-form" placeholder="Choose current location..." aria-label="current location">
+									</div>
+									<div class="short-div">
+										<input type="text" class="my-style-form" placeholder="Enter the destination point..." aria-label="current location">
+									</div>
+							</div>
+			        <div class="col-xs-1 tall-div">
+								<span class="input-group-addon glyphicon glyphicon-sort"></span>
+							</div>
+			    </div>
 				</div>
 				<div class="tabbable">
 				  <ul class="nav nav-tabs">
@@ -64,85 +68,75 @@
 				  <div class="tab-content">
 				    <div id="pane1" class="tab-pane active">
 							<div class="departure-tabs-options">
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Today<span class="caret"></span></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Tomorrow</a></li>
-											<li><a href="#">Monday</a></li>
-											<li><a href="#">Tuesday</a></li>
-											<li><a href="#">Wednesday</a></li>
-											<li><a href="#">Thursday</a></li>
-											<li><a href="#">Friday</a></li>
-											<li role="separator" class="divider"></li>
-											<li><a href="#">Separated link</a></li>
-											<li role="separator" class="divider"></li>
-											<li><a href="#">One more separated link</a></li>
-									</ul>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Time<span class="caret"></span></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">5:00 am</a></li>
-											<li><a href="#">5:30 am</a></li>
-											<li><a href="#">6:00 am</a></li>
-											<li role="separator" class="divider"></li>
-											<li><a href="#">Separated link</a></li>
-											<li role="separator" class="divider"></li>
-											<li><a href="#">One more separated link</a></li>
-									</ul>
-								</li>
-								<button type="reset" value="Reset" class="reset">Reset</button>
-								<a href="directions-options.html"> GO </a>
-							</div><!-- /departure tabs options -->
+								<div class="btn-group">
+									  <button type="button" class="btn btn-secondary dropdown-toggle secondary-btn-style" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									    today
+									  </button>
+									  <div class="dropdown-menu">
+									    <a class="dropdown-item" href="#">tomorrow</a>
+									    <a class="dropdown-item" href="#">monday</a>
+									    <a class="dropdown-item" href="#">wednesday</a>
+											<a class="dropdown-item" href="#">thursday</a>
+											<a class="dropdown-item" href="#">friday</a>
+											<a class="dropdown-item" href="#">saturday</a>
+									  </div>
+								</div>
+								<div class="btn-group ">
+									  <button type="button" class="btn btn-secondary dropdown-toggle secondary-btn-style" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									    9:00am
+									  </button>
+									  <div class="dropdown-menu">
+									    <a class="dropdown-item" href="#">9:30am</a>
+									    <a class="dropdown-item" href="#">10:00am</a>
+									    <a class="dropdown-item" href="#">10:30am</a>
+											<a class="dropdown-item" href="#">11:00am</a>
+											<a class="dropdown-item" href="#">11:30am</a>
+									  </div>
+								</div>
+                <div class="action-options">
+  								<button type="reset" value="Reset" class="reset secondary-btn-style">Reset</button>
+  								<button class="reset secondary-btn-style"><a href="directions-options.html"> GO </a></button>
+                </div>
+              </div><!-- /departure tabs options -->
 				    </div>
 				    <div id="pane2" class="tab-pane">
-				    <h4>Pane 2 Content</h4>
-				      <p> and so on ...</p>
+              <div class="departure-tabs-options">
+								<div class="btn-group ">
+									  <button type="button" class="btn btn-secondary dropdown-toggle secondary-btn-style" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									    today
+									  </button>
+									  <div class="dropdown-menu">
+									    <a class="dropdown-item" href="#">tomorrow</a>
+									    <a class="dropdown-item" href="#">monday</a>
+									    <a class="dropdown-item" href="#">wednesday</a>
+											<a class="dropdown-item" href="#">thursday</a>
+											<a class="dropdown-item" href="#">friday</a>
+											<a class="dropdown-item" href="#">saturday</a>
+									  </div>
+								</div>
+								<div class="btn-group ">
+									  <button type="button" class="btn btn-secondary dropdown-toggle secondary-btn-style" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									    9:00am
+									  </button>
+									  <div class="dropdown-menu">
+									    <a class="dropdown-item" href="#">9:30am</a>
+									    <a class="dropdown-item" href="#">10:00am</a>
+									    <a class="dropdown-item" href="#">10:30am</a>
+											<a class="dropdown-item" href="#">11:00am</a>
+											<a class="dropdown-item" href="#">11:30am</a>
+									  </div>
+								</div>
+                <div class="action-options">
+  								<button type="reset" value="Reset" class="reset secondary-btn-style">Reset</button>
+  								<button class="reset secondary-btn-style"><a href="directions-options.html"> GO </a></button>
+                </div>
+              </div><!-- /departure tabs options -->
 				    </div>
 				  </div><!-- /.tab-content -->
 				</div><!-- /.tabbable -->
-				<!-- <div class="tabs">
-					<ul class="nav nav-tabs">
-					  <li role="presentation" class="tab-active"><a href="#">Departure</a></li>
-							<div class="departure-tabs-options">
-								<li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Today<span class="caret"></span></a>
-				          	<ul class="dropdown-menu">
-					            <li><a href="#">Tomorrow</a></li>
-					            <li><a href="#">Monday</a></li>
-											<li><a href="#">Tuesday</a></li>
-											<li><a href="#">Wednesday</a></li>
-											<li><a href="#">Thursday</a></li>
-											<li><a href="#">Friday</a></li>
-					            <li role="separator" class="divider"></li>
-					            <li><a href="#">Separated link</a></li>
-					            <li role="separator" class="divider"></li>
-					            <li><a href="#">One more separated link</a></li>
-				          </ul>
-				        </li>
-								<li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Time<span class="caret"></span></a>
-				          	<ul class="dropdown-menu">
-					            <li><a href="#">5:00 am</a></li>
-					            <li><a href="#">5:30 am</a></li>
-											<li><a href="#">6:00 am</a></li>
-					            <li role="separator" class="divider"></li>
-					            <li><a href="#">Separated link</a></li>
-					            <li role="separator" class="divider"></li>
-					            <li><a href="#">One more separated link</a></li>
-				          </ul>
-				        </li>
-								<button type="reset" value="Reset" class="reset">Reset</button>
-								<a href="directions-options.html"> GO </a> -->
-							<!-- </div><! /departure tabs options -->
-					  <!-- <li role="presentation"><a href="#">Set Arrival Time</a></li> -->
-					<!-- </ul> -->
-				<!-- </div> -->
-      <!-- </div><! /custom-container -->
-
-      <footer>
-        <button type="button" class="cta"><a href="directions-chosen-v.2.html"><p class="question-mark">?</p></a></button>
-      </footer>
     </div><!-- /container-fluid -->
+		<footer>
+			<button type="button" class="cta"><a href="directions-chosen-v.2.html"><p class="question-mark">?</p></a></button>
+		</footer>
     </body>
     </html>
